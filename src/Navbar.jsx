@@ -1,11 +1,13 @@
-import './Navbar.css'
+import './Navbar.scss'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
     <>
       <nav>
+
         <div className='nav-logo'>
-          <h1 className='nav-nombre'><a href='/'>JC BLOG</a></h1>
+          <Link to="/"><h1 className='nav-nombre'><a href='/'>JC BLOG</a></h1></Link>
         </div>
 
         <div className='nav-search'>
@@ -15,9 +17,9 @@ function Navbar() {
 
         <div className='nav-menu'>
           <ul>
-            <li><a href='#'>Blog</a></li>
-            <li><a href='#'>Portafolio</a></li>
-            <li><a href='#'>Contacto</a></li>
+            <li> <Link to="/blog"><a href='#'>Blog</a></Link> </li> 
+            <li> <Link to="/portafolio"><a href='#'>Portafolio</a></Link> </li>
+            <li> <Link to="/contacto"><a href='#'>Contacto</a></Link> </li>
           </ul>
         </div>
 
