@@ -7,7 +7,7 @@ function Navbar() {
       <nav>
 
         <div className='nav-logo'>
-          <Link to="/"><h1 className='nav-nombre'><a href='/'>JC BLOG</a></h1></Link>
+          <h1 className='nav-nombre'>JC BLOG</h1>
         </div>
 
         <div className='nav-search'>
@@ -17,7 +17,7 @@ function Navbar() {
 
         <div className='nav-menu'>
           <ul>
-            <li> <Link to="/blog"><a href='#'>Blog</a></Link> </li> 
+            <li> <Link to="/"><a href='#'>Blog</a></Link> </li> 
             <li> <Link to="/portafolio"><a href='#'>Portafolio</a></Link> </li>
             <li> <Link to="/contacto"><a href='#'>Contacto</a></Link> </li>
           </ul>
