@@ -14,13 +14,23 @@ const posts = [
 
 function Home() {
   const [currentePage, setCurrentPage] = useState(1);
-  const postsPerPage = 3;
+  const postsPerPage = 4;
 
   const indexOfLastPost = currentePage * postsPerPage; // Index del ultimo post de la pagina actual
   const indexOfFirstPost = indexOfLastPost - postsPerPage; // Index del primer post de la pagina actual
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost); // Posts de la pagina actual
 
   const totalPages = Math.ceil(posts.length / postsPerPage); //Numero total de pags
+
+  const handleNextPage = () => {
+    setCurrentPage(prevPage => Math.min(prevPage + 1, totalPages));
+    window.scrollTo(0, 600);
+  };
+
+  const handlePreviousPage = () => {
+    setCurrentPage(prevPage => Math.max(prevPage - 1, 1));
+    window.scrollTo(0, 600);
+  };
 
   return (
   <>
@@ -43,9 +53,9 @@ function Home() {
           <Postcard key={post.id} title={post.title} category={post.category} description={post.description} date={post.date} image={post.image} />
         ))}
         <div className='pagination'>
-          <button onClick={() => setCurrentPage(currentePage - 1)} disabled={currentePage === 1}>Anterior</button>
+          <button onClick={handlePreviousPage}>Anterior</button>
           <span>{currentePage} de {totalPages}</span>
-          <button onClick={() => setCurrentPage(currentePage + 1)} disabled={currentePage === totalPages}>Siguiente</button>
+          <button onClick={handleNextPage}>Siguiente</button>
         </div>
       </div>
 

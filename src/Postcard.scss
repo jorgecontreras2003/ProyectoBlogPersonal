@@ -53,13 +53,19 @@ body {
             width: fit-content;
         }
         
-        .postcard-title {
-            color: #EDF2F7;
-            font-size: 2rem;
-            font-weight: 700;
-            margin: 1rem 0 .5rem 0;
-            cursor: pointer;
+        a {
+            text-decoration: none;
+            
+            h3 {
+                color: #EDF2F7;
+                font-size: 2rem;
+                font-weight: 700;
+                margin: 1rem 0 .5rem 0;
+                cursor: pointer;
+            }
+            
         }
+
 
         .postcard-description {
             color: #949495;

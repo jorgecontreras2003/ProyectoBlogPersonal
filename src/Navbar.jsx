@@ -20,6 +20,7 @@ function Navbar() {
             <li> <Link to="/"><a href='#'>Blog</a></Link> </li> 
             <li> <Link to="/portafolio"><a href='#'>Portafolio</a></Link> </li>
             <li> <Link to="/contacto"><a href='#'>Contacto</a></Link> </li>
+            <li> <Link to="/create-post"><a href='#'>Crear Post</a></Link> </li>
           </ul>
         </div>
 

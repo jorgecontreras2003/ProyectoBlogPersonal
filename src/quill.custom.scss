@@ -1,0 +1,50 @@
+/* quill-custom.css */
+
+/* Cambia el color de los íconos en la barra de herramientas */
+.ql-toolbar .ql-formats button .ql-stroke {
+    stroke: #e2e8f0; /* Color blanco para los íconos */
+  }
+  
+  .ql-toolbar .ql-formats button .ql-fill{
+    fill: #e2e8f0; /* Color blanco para los íconos */
+  }
+  
+  /* Cambia el color de fondo de los botones al pasar el mouse */
+  .ql-toolbar .ql-formats button:hover .ql-stroke,
+  .ql-toolbar .ql-formats button:focus .ql-stroke {
+    stroke: #666; /* Color negro al pasar el mouse */
+  }
+  
+  .ql-toolbar .ql-formats button:hover .ql-fill,
+  .ql-toolbar .ql-formats button:focus .ql-fill {
+    fill: #666; /* Color negro al pasar el mouse */
+  }
+
+  .ql-toolbar .ql-picker {
+    color: white; /* Color del texto en los pickers */
+  }
+  
+  .ql-toolbar .ql-picker-options {
+    background-color: #333; /* Color de fondo del menú de opciones */
+    border: 1px solid #444; /* Borde del menú de opciones */
+  }
+  
+  .ql-toolbar .ql-picker-options .ql-picker-item {
+    color: white; /* Color del texto de las opciones */
+  }
+  
+  .ql-toolbar .ql-picker-options .ql-picker-item:hover,
+  .ql-toolbar .ql-picker-options .ql-picker-item.ql-selected {
+    color: black; /* Color del texto al pasar el mouse o al seleccionar */
+    background-color: #fff; /* Fondo al pasar el mouse o al seleccionar */
+  }
+  
+  /* Personaliza el tamaño de los pickers */
+  .ql-toolbar .ql-picker-label {
+    color: white; /* Color del texto del picker */
+  }
+  
+  .ql-toolbar .ql-picker-label:hover {
+    color: black; /* Color del texto del picker al pasar el mouse */
+  }
+  
