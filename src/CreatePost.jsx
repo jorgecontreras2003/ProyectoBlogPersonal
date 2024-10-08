@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
+import Quill from 'quill';
 import './CreatePost.scss';
 import './quill.custom.scss'
 
@@ -52,7 +51,7 @@ const CreatePost = () => {
                 </div>
                 <div className='form-group'>
                 <label htmlFor='content'>Contenido</label>
-                <ReactQuill
+                <Quill
                     value={content}
                     onChange={setContent}
                     modules={{
